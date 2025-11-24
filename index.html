@@ -209,6 +209,28 @@
             border: 1px solid #cbd5e1;
             position: relative;
         }
+        
+
+        /* Reflection Grid for Final Slide */
+        .reflection-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+        .reflection-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .reflection-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .reflection-card i { font-size: 2rem; color: var(--accent); margin-bottom: 10px; }
+        .reflection-card h4 { font-size: 1rem; color: var(--primary); margin-bottom: 5px; }
+        .reflection-card p { font-size: 0.85rem; line-height: 1.4; color: var(--text); margin: 0; }
 
     </style>
 </head>
@@ -249,11 +271,24 @@
         </div>
     </div>
 
+    <div class="slide">
+        <video width="1280" height="720" autoplay muted>
+            <source src="Image/map.mov" type="video/mp4">
+        </video>
+    </div>
+
     <div class="slide layout-split">
         <div>
-            <h2>Self-Introduction</h2>
+            <h2>The Social Entrepreneur</h2><br>
+            <p><strong>Background:</strong> B.Sc. Physics graduate & M.Sc. student from Kozhikode. Founder of a small Project <em>CloudAlls</em> and Tech Advisor at Peace Village.</p>
+            <p><strong>Creative Interest:</strong> My work exists at the intersection of <strong>Technology</strong> and <strong>Human Welfare</strong>.</p>
+            <p><strong>Vision:</strong> To grow as a socially responsible entrepreneur who uses innovation to empower people.</p>
         </div>
-        <img src="Image/niyas.jpg" style="width:90%; border-radius:12px; box-shadow:var(--shadow);">
+        <div>
+            <img src="Image/CloudAlls copy.png" style="width:40%; border-radius:12px; box-shadow:var(--shadow);">
+            <img src="" style="width:40%; border-radius:12px; box-shadow:var(--shadow);">
+            <img src="Image/niyas.jpg" style="width:40%; border-radius:12px; box-shadow:var(--shadow);">
+        </div>
     </div>
 
     <div class="slide">
@@ -286,6 +321,11 @@
     <div class="slide layout-split">
         <div>
             <h2>Mind Map<br>Artificial Inteligence (AI)</h2>
+            <p>This is a visual roadmap of the Artificial Intelligence (AI) ecosystem, 
+                categorized into seven main branches. It covers core technical foundations like Machine Learning 
+                and Data Processing, specific capabilities like Natural Language Processing (NLP) and Robotics, 
+                and connects them to real-world Applications and Emerging Trends such as Generative AI.
+            </p>
         </div>
         <img src="Image/mi_map_1.png" style="width:100%; border-radius:12px; box-shadow:var(--shadow);">
     </div>
@@ -327,13 +367,22 @@
     <div class="slide layout-split">
         <div>
             <h2>Mind Map<br>Build a Humanoid Robot</h2>
+            <p>This is a 10-step mind map outlining the complete lifecycle of building a humanoid robot. 
+                It visually guides the creator from the initial Concept and Design phases, 
+                through the hardware engineering of Structure and Electronics, all the way to the final 
+                integration of AI software and Human Interaction.
+            </p>
         </div>
         <img src="Image/mi_map_2.png" style="width:100%; border-radius:12px; box-shadow:var(--shadow);">
     </div>
 
     <div class="slide layout-split">
         <div>
-            <h2>Logo</h2>
+            <h2>Logo - RoboSnacks</h2>
+            <p>RoboSnacks deploys autonomous, hygienic robotic cubicles to prepare fresh, customizable healthy snacks on demand. 
+                This touchless technology ensures food safety and lowers costs, making personalized, 
+                nutrient-dense food affordable and accessible for everyone in the community.
+            </p>
         </div>
         <img src="Image/logo_1.jpg" style="width:100%; border-radius:12px; box-shadow:var(--shadow);">
     </div>
@@ -358,6 +407,39 @@
             <div class="gallery-item"><img src="Image/4.JPG" class="gallery-img"></div>
             <div class="gallery-item"><img src="Image/5.JPG" class="gallery-img"></div>
             <div class="gallery-item"><img src="Image/6.JPG" class="gallery-img"></div>
+        </div>
+    </div>
+    <div class="slide">
+        <div style="text-align:center;">
+            <h2>Reflections on Learning</h2>
+            <p>How this course shaped my perspective on Engineering & Art.</p>
+        </div>
+        <div class="reflection-grid">
+            <div class="reflection-card">
+                <i class="fas fa-eye"></i>
+                <h4>Clarity</h4>
+                <p>How to Simplifying complex problems.</p>
+            </div>
+            <div class="reflection-card">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Creativity</h4>
+                <p>How to use Creativity in Oure Works.</p>
+            </div>
+            <div class="reflection-card">
+                <i class="fas fa-comments"></i>
+                <h4>Communication</h4>
+                <p>Connecting via visuals and emotion.</p>
+            </div>
+            <div class="reflection-card">
+                <i class="fas fa-brain"></i>
+                <h4>Reflection</h4>
+                <p>Learning that mistakes are part of growth.</p>
+            </div>
+            <div class="reflection-card">
+                <i class="fas fa-hands-helping"></i>
+                <h4>Social Impact</h4>
+                <p>Connecting innovation to welfare.</p>
+            </div>
         </div>
     </div>
 
